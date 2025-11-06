@@ -61,7 +61,7 @@ const Index = () => {
     <div className="min-h-screen">
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-primary">Сакура Керамика 🌸</h1>
+          <h1 className="text-2xl font-bold text-primary">Сакура Керамика</h1>
           <div className="flex gap-6 items-center">
             <a href="#catalog" className="hover:text-primary transition-colors">Каталог</a>
             <a href="#about" className="hover:text-primary transition-colors">О нас</a>
@@ -139,7 +139,9 @@ const Index = () => {
           <Button size="lg" className="animate-scale-in">
             Смотреть каталог
           </Button>
-          <div className="mt-12 text-6xl animate-float">🌸</div>
+          <svg className="mt-12 w-16 h-16 mx-auto text-primary animate-float" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C10.9 2 10 2.9 10 4C10 4.7 10.4 5.4 11 5.7C10.4 6.3 10 7.1 10 8C10 9.1 10.9 10 12 10C13.1 10 14 9.1 14 8C14 7.1 13.6 6.3 13 5.7C13.6 5.4 14 4.7 14 4C14 2.9 13.1 2 12 2M12 12C10.9 12 10 12.9 10 14C10 14.7 10.4 15.4 11 15.7C10.4 16.3 10 17.1 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 17.1 13.6 16.3 13 15.7C13.6 15.4 14 14.7 14 14C14 12.9 13.1 12 12 12M7 7C5.9 7 5 7.9 5 9C5 9.7 5.4 10.4 6 10.7C5.4 11.3 5 12.1 5 13C5 14.1 5.9 15 7 15C8.1 15 9 14.1 9 13C9 12.1 8.6 11.3 8 10.7C8.6 10.4 9 9.7 9 9C9 7.9 8.1 7 7 7M17 7C15.9 7 15 7.9 15 9C15 9.7 15.4 10.4 16 10.7C15.4 11.3 15 12.1 15 13C15 14.1 15.9 15 17 15C18.1 15 19 14.1 19 13C19 12.1 18.6 11.3 18 10.7C18.6 10.4 19 9.7 19 9C19 7.9 18.1 7 17 7Z"/>
+          </svg>
         </div>
       </section>
 
@@ -185,7 +187,11 @@ const Index = () => {
               Каждое изделие уникально и несет в себе частичку души мастера. 
               Мы используем только качественную глину и экологичные глазури.
             </p>
-            <p className="text-2xl">🎨 ✨ 🏺</p>
+            <div className="flex justify-center gap-6 text-primary">
+              <Icon name="Palette" size={32} />
+              <Icon name="Sparkles" size={32} />
+              <Icon name="FlaskConical" size={32} />
+            </div>
           </div>
         </div>
       </section>
@@ -287,7 +293,7 @@ const Index = () => {
       <footer className="py-8 px-4 border-t bg-secondary/20">
         <div className="container mx-auto text-center text-muted-foreground">
           <p>© 2024 Сакура Керамика. Все права защищены.</p>
-          <p className="mt-2">Создано с любовью 🌸</p>
+          <p className="mt-2">Создано с любовью</p>
         </div>
       </footer>
     </div>
